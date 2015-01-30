@@ -1,0 +1,445 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Payslips | Fourth</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="main.css">
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script src="hammer.jquery.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="main.js"></script>
+  
+    </head>
+    <body>
+        <header>
+            PAYSLIP HEADER TBC
+        </header>
+        <div class="nav">
+            <span></span>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <a href="#">28 Jan</a>
+            <a href="#">05 Feb</a>
+            <a href="#">12 Feb</a>
+            <a href="#">19 Feb</a>
+            <a href="#">26 Feb</a>
+            <a href="#">02 Mar</a>   
+            <a href="#">09 Mar</a>
+            <a href="#">16 Mar</a>
+            <a href="#">23 Mar</a>
+            <a href="#" class="active">30 Mar</a>
+
+
+        </div>
+        <div class="charts">
+            <ul>
+                <li>
+                    <div class="col1">
+                        <div class="info">
+                            <h3>Total pay: £554.97</h3>
+                            <h2>Take home:<br><span>£488.00</span></h2>
+                        </div>
+                        <div class="chart" id="chart3" style="width:100%;"></div>
+                        <div class="buttons">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" fill="#3D4142" d="M15 9.5c-0.3 0-0.5 0.2-0.5 0.5v3.5h-13V10 c0-0.3-0.2-0.5-0.5-0.5c-0.3 0-0.5 0.2-0.5 0.5v4c0 0.3 0.2 0.5 0.5 0.5h14c0.3 0 0.5-0.2 0.5-0.5v-4C15.5 9.7 15.3 9.5 15 9.5z M7.6 11.4c0.1 0.1 0.2 0.1 0.4 0.1c0.1 0 0.3 0 0.4-0.1l3-3.5c0.2-0.2 0.2-0.5 0-0.7c-0.2-0.2-0.5-0.2-0.7 0L8.5 9.6V2 c0-0.3-0.2-0.5-0.5-0.5C7.7 1.5 7.5 1.7 7.5 2v7.6L5.4 7.1c-0.2-0.2-0.5-0.2-0.7 0c-0.2 0.2-0.2 0.5 0 0.7L7.6 11.4z"/></svg>
+                                Download payslip (.pdf)
+                            </button>
+                            <button class="tabletoggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" fill="#3D4142" d="M12.8 4.1c-0.2-0.1-0.5-0.1-0.7 0.2L9 7.1L6.5 5.3 C6.4 5.1 6.2 5.1 5.9 5.1c0 0-0.1 0-0.1 0c0 0 0 0 0 0c0 0 0 0 0 0c0 0-0.1 0-0.1 0.1c0 0-0.1 0.1-0.1 0.1c0 0 0 0 0 0l-2.5 3 C2.9 8.6 3 8.9 3.3 9c0.2 0.1 0.5 0.1 0.7-0.2l2.2-2.6l2.3 1.7C8.5 7.9 8.6 8 8.6 8c0 0 0.1 0.1 0.1 0.1C9 8.3 9.3 8.2 9.4 7.9 l3.5-3.2C13.1 4.5 13 4.2 12.8 4.1z M15.5 1.1h-15C0.2 1.1 0 1.3 0 1.6c0 0.3 0.2 0.5 0.5 0.5H1v9c0 0.6 0.4 1 1 1h4.3l-1.2 2.3 C4.9 14.6 5 14.9 5.3 15c0.3 0.1 0.6 0.1 0.8-0.2l1.4-2.6c0-0.1 0.1-0.1 0.1-0.2h1c0 0.1 0 0.1 0.1 0.2l1.4 2.6 c0.2 0.2 0.5 0.3 0.8 0.2c0.3-0.1 0.4-0.4 0.2-0.6l-1.2-2.3H14c0.6 0 1-0.4 1-1v-9h0.5c0.3 0 0.5-0.2 0.5-0.5 C16 1.3 15.8 1.1 15.5 1.1z M14 10.6c0 0.3-0.2 0.5-0.5 0.5h-11c-0.3 0-0.5-0.2-0.5-0.5V2.1h0.5c0 0 0 0 0 0h11c0 0 0 0 0 0H14 V10.6z"/></svg>
+                                Show payslip breakdown
+                            </button>
+                            <table>
+                                <tr>
+                                    <td>Number</td>
+                                    <td>1234C</td>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Fred Flintstone</td>
+                                </tr>
+                                <tr>
+                                    <td>N.I. number</td>
+                                    <td>NW 22 22 22 A</td>
+                                </tr>
+                                <tr>
+                                    <td>Tax code</td>
+                                    <td>747L</td>
+                                </tr>
+                                <tr>
+                                    <td>Tax period</td>
+                                    <td>WK41</td>
+                                </tr>
+                                <tr>
+                                    <td>Payment method</td>
+                                    <td>BACS</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col1">
+                        <div class="info">
+                            <h3>Total pay: £554.97</h3>
+                            <h2>Take home:<br><span>£325.25</span></h2>
+                        </div>
+                        <div class="chart" id="chart2" style="width:100%;"></div>
+                        <div class="buttons">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" fill="#3D4142" d="M15 9.5c-0.3 0-0.5 0.2-0.5 0.5v3.5h-13V10 c0-0.3-0.2-0.5-0.5-0.5c-0.3 0-0.5 0.2-0.5 0.5v4c0 0.3 0.2 0.5 0.5 0.5h14c0.3 0 0.5-0.2 0.5-0.5v-4C15.5 9.7 15.3 9.5 15 9.5z M7.6 11.4c0.1 0.1 0.2 0.1 0.4 0.1c0.1 0 0.3 0 0.4-0.1l3-3.5c0.2-0.2 0.2-0.5 0-0.7c-0.2-0.2-0.5-0.2-0.7 0L8.5 9.6V2 c0-0.3-0.2-0.5-0.5-0.5C7.7 1.5 7.5 1.7 7.5 2v7.6L5.4 7.1c-0.2-0.2-0.5-0.2-0.7 0c-0.2 0.2-0.2 0.5 0 0.7L7.6 11.4z"/></svg>
+                                Download payslip (.pdf)
+                            </button>
+                            <button class="tabletoggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" fill="#3D4142" d="M12.8 4.1c-0.2-0.1-0.5-0.1-0.7 0.2L9 7.1L6.5 5.3 C6.4 5.1 6.2 5.1 5.9 5.1c0 0-0.1 0-0.1 0c0 0 0 0 0 0c0 0 0 0 0 0c0 0-0.1 0-0.1 0.1c0 0-0.1 0.1-0.1 0.1c0 0 0 0 0 0l-2.5 3 C2.9 8.6 3 8.9 3.3 9c0.2 0.1 0.5 0.1 0.7-0.2l2.2-2.6l2.3 1.7C8.5 7.9 8.6 8 8.6 8c0 0 0.1 0.1 0.1 0.1C9 8.3 9.3 8.2 9.4 7.9 l3.5-3.2C13.1 4.5 13 4.2 12.8 4.1z M15.5 1.1h-15C0.2 1.1 0 1.3 0 1.6c0 0.3 0.2 0.5 0.5 0.5H1v9c0 0.6 0.4 1 1 1h4.3l-1.2 2.3 C4.9 14.6 5 14.9 5.3 15c0.3 0.1 0.6 0.1 0.8-0.2l1.4-2.6c0-0.1 0.1-0.1 0.1-0.2h1c0 0.1 0 0.1 0.1 0.2l1.4 2.6 c0.2 0.2 0.5 0.3 0.8 0.2c0.3-0.1 0.4-0.4 0.2-0.6l-1.2-2.3H14c0.6 0 1-0.4 1-1v-9h0.5c0.3 0 0.5-0.2 0.5-0.5 C16 1.3 15.8 1.1 15.5 1.1z M14 10.6c0 0.3-0.2 0.5-0.5 0.5h-11c-0.3 0-0.5-0.2-0.5-0.5V2.1h0.5c0 0 0 0 0 0h11c0 0 0 0 0 0H14 V10.6z"/></svg>
+                                Show payslip breakdown
+                            </button>
+                            <table>
+                                <tr>
+                                    <td>Number</td>
+                                    <td>1234C</td>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Fred Flintstone</td>
+                                </tr>
+                                <tr>
+                                    <td>N.I. number</td>
+                                    <td>NW 22 22 22 A</td>
+                                </tr>
+                                <tr>
+                                    <td>Tax code</td>
+                                    <td>747L</td>
+                                </tr>
+                                <tr>
+                                    <td>Tax period</td>
+                                    <td>WK41</td>
+                                </tr>
+                                <tr>
+                                    <td>Payment method</td>
+                                    <td>BACS</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="col1">
+                        <div class="info">
+                            <h3>Total pay: £752.97</h3>
+                            <h2>Take home:<br><span>£558.25</span></h2>
+                        </div>
+                        <div class="chart" id="chart1" style="width:100%;"></div>
+                    
+
+                        <div class="buttons">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" fill="#3D4142" d="M15 9.5c-0.3 0-0.5 0.2-0.5 0.5v3.5h-13V10 c0-0.3-0.2-0.5-0.5-0.5c-0.3 0-0.5 0.2-0.5 0.5v4c0 0.3 0.2 0.5 0.5 0.5h14c0.3 0 0.5-0.2 0.5-0.5v-4C15.5 9.7 15.3 9.5 15 9.5z M7.6 11.4c0.1 0.1 0.2 0.1 0.4 0.1c0.1 0 0.3 0 0.4-0.1l3-3.5c0.2-0.2 0.2-0.5 0-0.7c-0.2-0.2-0.5-0.2-0.7 0L8.5 9.6V2 c0-0.3-0.2-0.5-0.5-0.5C7.7 1.5 7.5 1.7 7.5 2v7.6L5.4 7.1c-0.2-0.2-0.5-0.2-0.7 0c-0.2 0.2-0.2 0.5 0 0.7L7.6 11.4z"/></svg>
+                                Download payslip (.pdf)
+                            </button>
+                            <button class="tabletoggle">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><path fill-rule="evenodd" clip-rule="evenodd" fill="#3D4142" d="M12.8 4.1c-0.2-0.1-0.5-0.1-0.7 0.2L9 7.1L6.5 5.3 C6.4 5.1 6.2 5.1 5.9 5.1c0 0-0.1 0-0.1 0c0 0 0 0 0 0c0 0 0 0 0 0c0 0-0.1 0-0.1 0.1c0 0-0.1 0.1-0.1 0.1c0 0 0 0 0 0l-2.5 3 C2.9 8.6 3 8.9 3.3 9c0.2 0.1 0.5 0.1 0.7-0.2l2.2-2.6l2.3 1.7C8.5 7.9 8.6 8 8.6 8c0 0 0.1 0.1 0.1 0.1C9 8.3 9.3 8.2 9.4 7.9 l3.5-3.2C13.1 4.5 13 4.2 12.8 4.1z M15.5 1.1h-15C0.2 1.1 0 1.3 0 1.6c0 0.3 0.2 0.5 0.5 0.5H1v9c0 0.6 0.4 1 1 1h4.3l-1.2 2.3 C4.9 14.6 5 14.9 5.3 15c0.3 0.1 0.6 0.1 0.8-0.2l1.4-2.6c0-0.1 0.1-0.1 0.1-0.2h1c0 0.1 0 0.1 0.1 0.2l1.4 2.6 c0.2 0.2 0.5 0.3 0.8 0.2c0.3-0.1 0.4-0.4 0.2-0.6l-1.2-2.3H14c0.6 0 1-0.4 1-1v-9h0.5c0.3 0 0.5-0.2 0.5-0.5 C16 1.3 15.8 1.1 15.5 1.1z M14 10.6c0 0.3-0.2 0.5-0.5 0.5h-11c-0.3 0-0.5-0.2-0.5-0.5V2.1h0.5c0 0 0 0 0 0h11c0 0 0 0 0 0H14 V10.6z"/></svg>
+                                Show payslip breakdown
+                            </button>
+                            <table>
+                                <tr>
+                                    <td>Number</td>
+                                    <td>1234C</td>
+                                </tr>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Fred Flintstone</td>
+                                </tr>
+                                <tr>
+                                    <td>N.I. number</td>
+                                    <td>NW 22 22 22 A</td>
+                                </tr>
+                                <tr>
+                                    <td>Tax code</td>
+                                    <td>747L</td>
+                                </tr>
+                                <tr>
+                                    <td>Tax period</td>
+                                    <td>WK41</td>
+                                </tr>
+                                <tr>
+                                    <td>Payment method</td>
+                                    <td>BACS</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxxxxxxxxx</td>
+                                    <td>yyyyyyyyyyyyy</td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+
+        <div class="line">
+            <h1 style="text-align:center;padding-top:20px;position:relative; top:10px;">Historic breakdown</h1>
+            <div id="line" style="height:380px;"></div>
+            
+            <script>
+$(function () {
+    $('#line').highcharts({
+        chart: {
+            type: 'spline',
+            margin:0,
+            marginBottom:50
+        },
+        title: {
+            text: null
+        },
+       credits: {
+            enabled: false
+        },
+        legend: {
+            enabled: false
+        },
+        xAxis: {
+            tickmarkPlacement: 'on',
+            tickWidth: 0,
+            gridLineWidth: 1,
+            tickPositions: [8],
+            categories: ['28 Jan', '05 Feb', '12 Feb', '19 Feb', '26 Feb', '02 Mar', '09 Mar', '16 Mar', '23 Mar', '30 Mar']
+        },
+        yAxis: {
+            title: {
+                text: null
+            },
+            
+            labels: {
+                align:'left',
+                x:0,
+                y:-2,
+                style: {
+                    'color':'#CCC'
+                },
+                formatter: function () {
+                    return '£' + this.value;
+                }
+            }
+        },
+        tooltip: {
+            pointFormat: '{series.name} = <b>£{point.y:,.0f}</b>'
+        },
+        plotOptions: {
+            spline: {
+                marker: {
+                    symbol: 'circle'
+                },
+                animation: false
+            }
+           
+        },
+        series: [{
+            color: '#999',
+            name: 'Total',
+            data: random(650)
+        },{
+            color: '#9cbf2b',
+            name: 'Payment',
+            data: random(500)
+        }, {
+            color: '#d2234f',
+            name: 'Deduction',
+            data: random(100)
+        }]
+    });
+});
+
+function random(max) {
+    var items = 10;
+    var arr = [];
+    for(var i = 0; i<items; i++) {
+        var bar = Math.floor(Math.random() * 50) + max;
+        arr.push(bar);
+    }
+ return arr;
+}
+            </script>
+        </div>
+        
+    </body>
+</html>
